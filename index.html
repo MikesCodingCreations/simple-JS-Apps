@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple JS Apps</title>
+</head>
+<body>
+    <div class="img-to-pdf-converter-app">
+        <h1>Image to PDF converter</h1>
+        <div class="upload-img">
+            <input type="file" onchange="loadImg(event)" accept=".png,.jpg,.jpeg" name="" id="">
+            Upload Your Image
+        </div>
+        <button onclick="pdfDown()">Download PDF</button>
+        <img src="images/1.png" id="showImg">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
